@@ -1,0 +1,90 @@
+<!-- .Write a javascript Program to perform a swapping of two variables.(all function use) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-6</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //------------------------ Take nothing return nothing-----------------------------------
+        function method1()
+        {
+            var a = parseInt(prompt("Enter the value of no. 1:-"));
+            var b = parseInt(prompt("Enter the value of no. 2:-"));
+            var c;
+            document.write(`<h1>Method:- 1</h1>`)
+            document.write(`<h5>Before Swap value of A is ${a}</h5>`);
+            document.write(`<h5>Before swap value of B is ${b}</h5>`);
+            c = a;
+            a = b;
+            b = c;
+            document.write(`<h5>After Swap value of A is ${a}</h5>`);
+            document.write(`<h5>After swap value of B is ${b}</h5>`);
+        }
+        method1();
+
+        //------------------------ Take nothing return something-----------------------------------
+        function method2()
+        {
+            var a = parseInt(prompt("Enter the value of no. 1:-"));
+            var b = parseInt(prompt("Enter the value of no. 2:-"));
+            var c;
+            document.write(`<h1><br></h1>`);
+            document.write(`<h1>Method:- 2</h1>`);
+
+            document.write(`<h5>Before Swap value of A is ${a}</h5>`);
+            document.write(`<h5>Before swap value of B is ${b}</h5>`);
+            c = a;
+            a = b;
+            b = c;
+            document.write(`<h5>After Swap value of A is ${a}</h5>`);
+            document.write(`<h5>After swap value of B is ${b}</h5>`);
+            return "Swap successfully....";
+        }
+        var ans = method2();
+        document.write(`${ans}`);
+
+
+        //------------------------ Take Something return nothing-----------------------------------
+        function method3(x,y)
+        {
+            var z;
+            z = x;
+            x = y;
+            y = z;
+            document.write(`<h5>After Swap value of A is ${x}</h5>`);
+            document.write(`<h5>After swap value of B is ${y}</h5>`);
+        }
+        var a = parseInt(prompt("Enter the value of no. 1:-"));
+        var b = parseInt(prompt("Enter the value of no. 2:-"));
+        document.write(`<h1><br></h1>`);
+        document.write(`<h1>Method:- 3</h1>`);
+        document.write(`<h5>Before Swap value of A is ${a}</h5>`);
+        document.write(`<h5>Before swap value of B is ${b}</h5>`);
+        method3(a,b);
+
+
+        //------------------------ Take Something return something-----------------------------------
+        function method4(x, y) {
+            document.write(`<h1><br></h1>`);
+            document.write(`<h1>Method:- 4</h1>`);
+            document.write(`<h5>Before Swap value of A is ${x}</h5>`);
+            document.write(`<h5>Before swap value of B is ${y}</h5>`);
+            var z;
+            z = x;
+            x = y;
+            y = z;
+            document.write(`<h5>After Swap value of A is ${x}</h5>`);
+            document.write(`<h5>After swap value of B is ${y}</h5>`);
+            return "Swap successfully....";
+        }
+        let Ans = method4(14, 28);
+        document.write(`${Ans}`);
+    </script>
+</body>
+
+</html>

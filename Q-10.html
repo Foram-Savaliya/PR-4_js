@@ -1,0 +1,78 @@
+<!-- Write a JavaScript program to decide that you eligible for voting? (using all function) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-10</title>
+</head>
+
+<body>
+    <script type="text/JavaScript">
+
+
+          // -----------------------Take nothing return nothing----------------------------
+        function method_1(){
+               var age = parseInt(prompt(`Enter any age :- `));
+               document.write(`<h3>Age => ${age}</h3>`);
+               if(age>=18){
+                    document.write(`<h3>You are eligible to vote....</h3>`);
+               }
+               else{
+                    document.write(`<h3>You are not eligible to vote....</h3>`);
+               }
+          }
+
+          // -----------------------Take something return nothing----------------------------
+          function method_2(age){
+               document.write(`<h3>Age => ${age}</h3>`);
+               if(age>=18){
+                    document.write(`<h3>You are eligible to vote....</h3>`);
+               }
+               else{
+                    document.write(`<h3>You are not eligible to vote....</h3>`);
+               }
+          }
+
+          // ---------------------------Take nothing rteturn something--------------------------
+          function method_3() {
+               var age = parseInt(prompt(`Enter age :- `));
+               document.write(`<h3>Age => ${age}</h3>`);
+               if(age>=18){
+                    return "<h3>You are eligible to vote....</h3>";
+               }
+               else{
+                    return "<h3>You are not eligible to vote....</h3>";
+               }
+          }
+          
+          // -------------------------Take something return something-----------------------------
+          function method_4(age){
+
+               
+               document.write(`<h3>Age => ${age}</h3>`);
+               if(age>=18){
+                    return "<h3>You are eligible to vote....</h3>";
+               }
+               else{
+                    return "<h3>You are not eligible to vote....</h3>";
+               }
+          }
+          
+          method_1();
+
+          var age = parseInt(prompt(`Enter any age :- `));
+          method_2(age);
+          
+          var result = method_3();
+          document.write(`${result}`);
+
+          var age = parseInt(prompt(`Enter age :- `));
+          var validity = method_4();
+          document.write(`${validity}`);
+
+    </script>
+</body>
+
+</html>

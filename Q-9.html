@@ -1,0 +1,98 @@
+<!-- Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all function) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-9</title>
+</head>
+
+<body>
+    <script type="text/JavaScript">
+
+        // -------------------------Take nothing return nothing--------------------------------
+        // function method_1(){
+        //     var a1 = parseInt(prompt("Enter the value of first angle:-"));
+        //     var a2 = parseInt(prompt("Enter the value of second angle:-"));
+        //     var a3 = parseInt(prompt("Enter the value of third angle:-"));
+
+        //     document.write(`<h4>Angle 1 :- ${a1} , Angle 2 :- ${a2} , Angle 3 :- ${a3}</h4>`);
+        //     var total = a1 + a2 + a3;
+        //     document.write(`total is ${total} <br>`);
+        //     if(total == 180)
+        //     {
+        //         document.write(`Triangle is valid...`);
+        //     }
+        //     else{
+        //         document.write(`Triangle is not valid...`);
+        //     }
+        // }
+        // method_1();
+
+
+        // -------------------------Take something return nothing--------------------------------
+        // function method_2(x,y,z){
+
+        //     document.write(`<h4>Angle 1 :- ${x} , Angle 2 :- ${y} , Angle 3 :- ${z}</h4>`);
+        //     var total = x + y + z;
+        //     document.write(`total is ${total} <br>`);
+        //     if(total == 180)
+        //     {
+        //         document.write(`Triangle is valid...`);
+        //     }
+        //     else{
+        //         document.write(`Triangle is not valid...`);
+        //     }
+        // }
+        // var a1 = parseInt(prompt("Enter the value of first angle:-"));
+        // var a2 = parseInt(prompt("Enter the value of second angle:-"));
+        // var a3 = parseInt(prompt("Enter the value of third angle:-"));
+        // method_2(a1,a2,a3);
+
+
+         // -------------------------Take nothing return something--------------------------------
+        //  function method_3(){
+        //     var a1 = parseInt(prompt("Enter the value of first angle:-"));
+        //     var a2 = parseInt(prompt("Enter the value of second angle:-"));
+        //     var a3 = parseInt(prompt("Enter the value of third angle:-"));
+
+        //     document.write(`<h4>Angle 1 :- ${a1} , Angle 2 :- ${a2} , Angle 3 :- ${a3}</h4>`);
+        //     var total = a1 + a2 + a3;
+        //     document.write(`total is ${total} <br>`);
+        //     if(total == 180)
+        //     {
+        //         return "Triangle is valid....";
+        //     }
+        //     else{
+        //         return "triangle is not valid...";
+        //     }
+        // }
+        // let ans = method_3();
+        // document.write(`${ans}`);
+
+
+        // -------------------------Take something return something--------------------------------
+        function method_4(x,y,z){
+           
+            document.write(`<h4>Angle 1 :- ${x} , Angle 2 :- ${y} , Angle 3 :- ${z}</h4>`);
+            var total = x + y + z;
+            document.write(`total is ${total} <br>`);
+            if(total == 180)
+            {
+                return "Triangle is valid....";
+            }
+            else{
+                return "triangle is not valid...";
+            }
+        }
+        var a1 = parseInt(prompt("Enter the value of first angle:-"));
+            var a2 = parseInt(prompt("Enter the value of second angle:-"));
+            var a3 = parseInt(prompt("Enter the value of third angle:-"));
+        let ans = method_4(a1,a2,a3);
+        document.write(`${ans}`);
+
+    </script>
+</body>
+
+</html>

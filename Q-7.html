@@ -1,0 +1,116 @@
+<!-- Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-7</title>
+</head>
+
+<body>
+    <script type='text/javascript'>
+        // ----------------------Take nothing return nothing---------------------------------
+        function method_1() {
+            var a = parseInt(prompt(`Enter a : `));
+            var b = parseInt(prompt(`Enter b :`));
+            var c = parseInt(prompt(`Enter c :`));
+            document.write(`<h3>A : ${a} <br> B : ${b} <br> C : ${c}</h3>`);
+
+            if (a > b) {
+                if (a > c) {
+                    document.write(`A is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+            else {
+                if (b > c) {
+                    document.write(`B is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+        }
+
+        // -----------------------------Take somthing return nothing---------------------------------
+        function method_2(a, b, c) {
+            document.write(`<h3>A : ${a} <br> B : ${b} <br> C : ${c}</h3>`);
+            if (a > b) {
+                if (a > c) {
+                    document.write(`A is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+            else {
+                if (b > c) {
+                    document.write(`B is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+        }
+
+
+        // -----------------------------Take nothing return something---------------------------------
+
+        function method_3() {
+            var a = parseInt(prompt(`Enter a : `));
+            var b = parseInt(prompt(`Enter b : `));
+            var c = parseInt(prompt(`Enter c : `));
+            document.write(`<h3>A : ${a} <br> B : ${b} <br> C : ${c}</h3>`);
+            if (a > b) {
+                if (a > c) {
+                    document.write(`A is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+            else {
+                if (b > c) {
+                    document.write(`B is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+        }
+
+
+        // -----------------------------Take somthing return something---------------------------------
+
+        function method_4(a, b, c) {
+
+            document.write(`<h3>A : ${a} <br> B : ${b} <br> C : ${c}</h3>`);
+            if (a > b) {
+                if (a > c) {
+                    document.write(`A is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+            else {
+                if (b > c) {
+                    document.write(`B is maximum number...`);
+                }
+                else {
+                    document.write(`C is maximum number...`);
+                }
+            }
+        }
+
+        method_1();
+        method_2(10, 24, 49);
+        method_3();
+        method_4(1, 2, 3);
+    </script>
+</body>
+
+</html>
